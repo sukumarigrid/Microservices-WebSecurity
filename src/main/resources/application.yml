@@ -1,0 +1,12 @@
+app:
+  security:
+    jwt:
+      issuer: microservices-websecurity
+      secret: microservices-websecurity-demo-secret-key-which-is-long-enough-for-hs256
+      access-token-ttl: 1h
+      service-token-ttl: 15m
+
+spring:
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
